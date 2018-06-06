@@ -47,7 +47,7 @@ function removeFromCart(item) {
 
   for (var i = 0; i < cart.length; i++){
     if (item === cart[i].itemName) {
-      cart.splice(i, 1);
+      cart.splice(i, 1); //removes 1 item at index i
       return cart;
     }
   }
@@ -59,5 +59,9 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
+
+  if (cardNumber = "") {
+    return "Sorry, we don't have a credit card on file for you."
+  }
   // write your code here
 }
