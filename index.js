@@ -46,6 +46,8 @@ function removeFromCart(item) {
   if (item != cart[item]) {
     return "That item is not in your cart."
   }
+  delete cart.item;
+  return cart;
 }
 
 function placeOrder(cardNumber) {
